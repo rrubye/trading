@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.from-yellow-400 {
+  --tw-gradient-from: #F1CE4E var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(250 204 21 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-yellow-500 {
+  --tw-gradient-to: #E9CC4F var(--tw-gradient-to-position);
+}
+
+.from-yellow-500 {
+  --tw-gradient-from: #E3CB50 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(234 179 8 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-green-300 {
+  --tw-gradient-to: #D6CA51 var(--tw-gradient-to-position);
+}
+
+.from-green-300 {
+  --tw-gradient-from: #CFC952 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(134 239 172 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-green-400 {
+  --tw-gradient-to: #C0C754 var(--tw-gradient-to-position);
+}
+
+.from-green-400 {
+  --tw-gradient-from: #B9C555 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(74 222 128 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-green-500 {
+  --tw-gradient-to: #ABC357 var(--tw-gradient-to-position);
+}
+
+.from-green-500 {
+  --tw-gradient-from: #A5C258 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(74 222 128 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-green-600 {
+  --tw-gradient-to: #9BC15A var(--tw-gradient-to-position);
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
