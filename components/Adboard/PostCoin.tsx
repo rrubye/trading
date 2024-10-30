@@ -36,7 +36,7 @@ const PostCoin: React.FC = () => {
           alt=":( image not found"
         />
         <Image
-          className="absolute xxs:hidden lg:block lg:w-[40%] xl:w-[30%] xxl:w-[25%]  right-[16%] bottom-0 xl:h-[90%] xxl:h-[115%]"
+          className="absolute xxs:hidden lg:block lg:w-[40%] xl:w-[30%] xxl:w-[25%]  right-[16%] bottom-0 xl:h-[105%] xxl:h-[115%]"
           src={manPhoto}
           alt=":( image not found"
         />

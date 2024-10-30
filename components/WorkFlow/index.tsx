@@ -15,12 +15,12 @@ const WorkFlow: React.FC = () => {
             Просто и быстро — займ онлайн за <b>3</b> шага!
         </h1>
       <div className="w-full relative">
-        <div className="absolute left-[15%] top-[40%]">
+        <div className="absolute left-[15%] top-[20%] xxl:top-[40%]">
           <Button position={true} title={"Заполни заявку и укажи свои данные"}>
             <Image src={alertBox} alt=":( img not found"></Image>
           </Button>
         </div>
-        <div className="absolute left-[45%] top-[25%]">
+        <div className="absolute left-[45%] top-0 xl:top-[25%]">
           <Button position={true} title={"Подтверждение займа"}>
             <Image src={hands} alt=":( img not found"></Image>
           </Button>

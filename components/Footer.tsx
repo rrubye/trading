@@ -5,7 +5,7 @@ import DarkMark from "@/public/assets/icons/title_light.png";
 const FooterBar: React.FC = () => {
   return (
     <div
-      className="w-full bg-cover min-h-[50vh] px-[10%] py-[10vh] flex flex-wrap gap-10"
+      className="w-full bg-cover min-h-[50vh] px-[8%] py-[10vh] flex flex-wrap gap-10"
       style={{ backgroundImage: "url('/assets/bg/footer_bg.png')" }}
     >
       <div className="w-[20%] flex flex-col gap-5">
@@ -37,7 +37,7 @@ const FooterBar: React.FC = () => {
         <p className="text-white text-3xl">Акции</p>
         <p className="text-white text-3xl">Пожаловаться</p>
       </div>
-      <div className="w-[25%] flex flex-col">
+      <div className="w-[22%] flex flex-col">
         <p className="text-white text-3xl">
           Свидетельство о государственной регистрации Свидетельство о внесении в
           реестр МФО Членство в СРО Союз «Микрофинансовый Альянс» Реквизиты
