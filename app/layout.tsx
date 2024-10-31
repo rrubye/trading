@@ -1,9 +1,12 @@
+"use client";
 import localFont from "next/font/local";
 import "./globals.css";
 import RootLayoutProvider from "@/components/RootLayoutProvide";
 import Navbar from "@/components/Navbar";
 import PageProvider from "@/components/PageProvider";
 import FooterBar from "@/components/Footer";
+import SideBar from "@/components/Sidebar";
+import { useEffect, useState } from "react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -17,13 +20,33 @@ const geistMono = localFont({
 });
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [openSidebar, setOpenSidebar] = useState<boolean>(false);
+
+  const handleClickOutside = () => {
+    if (openSidebar) {
+      setOpenSidebar(false); // Close sidebar on outside click
+    }
+  };
+
+  useEffect(() => {
+    if (openSidebar) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [openSidebar]);
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <RootLayoutProvider>
-          <Navbar />
+          <Navbar open={openSidebar} setOpen={setOpenSidebar} />
+          <SideBar open={openSidebar} setOpen={setOpenSidebar} />
           <PageProvider>{children}</PageProvider>
           <FooterBar />
         </RootLayoutProvider>

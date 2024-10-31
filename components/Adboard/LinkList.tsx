@@ -1,20 +1,24 @@
 import React from "react";
 import Link from "next/link";
-
-const linkList = ["главная", "займы", "скоринг", "контакты"];
+import { linkList } from "@/consts";
 
 const LinkList: React.FC = () => {
   const spreadLinks = () =>
-    linkList.map((item: string) => (
+    linkList.slice(0, -1).map((item: string) => (
       <Link className="text-gray-700 text-3xl" key={item} href={""}>
         {item}
       </Link>
     ));
   return (
-    <div className="relative w-full px-[100px] py-[40px] flex justify-between">
-      <div className="flex justify-between w-[60%]">{spreadLinks()}</div>
-      <Link className="text-gray-700 text-3xl" href={""}>
-        о компании
+    <div className="translate-x-0 xxs:hidden xxs:duration-300 xxs:translate-y-[-100%] lg:duration-300 lg:translate-y-0 lg:flex  relative w-full px-[100px] py-[40px]  justify-between">
+      <div className="flex justify-between lg:w-[100%] xl:w-[60%]">
+        {spreadLinks()}
+        <Link className="text-gray-700 text-3xl xl:hidden" href={""}>
+          {linkList[linkList.length - 1]}
+        </Link>
+      </div>
+      <Link className="text-gray-700 text-3xl hidden xl:block" href={""}>
+        {linkList[linkList.length - 1]}
       </Link>
     </div>
   );
