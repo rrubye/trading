@@ -12,13 +12,13 @@ import costFive from "@/public/assets/images/cost5.png";
 const PostCoin: React.FC = () => {
   return (
     <div className="w-full relative">
-      <div className="w-full h-[650px] bg-stone-300 border-r-stone-500 rounded-[62px]">
+      <div className="w-full h-[650px] bg-stone-300 border-r-stone-500 rounded-[10px] md:rounded-[62px]">
         <Image
           className="absolute w-[8%] right-[38%] top-[20%] "
           src={costOne}
           alt=":( image not found"
         />
-        <div className="absolute w-[14%] left-[15%] flex flex-col items-center top-[25%]">
+        <div className="absolute w-[25%] left-[20%] sm:w-[14%] sm:left-[18%] md:w-[14%] md:left-[17%] flex flex-col items-center top-[25%]">
           <h1 className="text-5xl font-semibold">Быстрый займ</h1>
           <div className="w-[100%] h-1 bg-lime-600 my-2"></div>
           <h3 className="text-center text-2xl">
@@ -36,12 +36,12 @@ const PostCoin: React.FC = () => {
           alt=":( image not found"
         />
         <Image
-          className="absolute xxs:hidden lg:block lg:w-[40%] xl:w-[30%] xxl:w-[25%]  right-[16%] bottom-0 xl:h-[105%] xxl:h-[115%]"
+          className="absolute hidden sm:block  w-[90%] right-[10%] md:w-[50%] lg:w-[40%] xl:w-[35%] xl:h-[105%] xxl:w-[24%]  xxl:h-[115%]  xxl:right-[16%] bottom-0 "
           src={manPhoto}
           alt=":( image not found"
         />
         <Image
-          className="absolute w-[4%] right-[33%] top-[43%] "
+          className="absolute top-[55%] right-[50%] lg:top-[55%] lg:right-[45%] xl:top-[47%] xl:right-[40%] xxl:w-[4%] xxl:right-[33%]  "
           src={costThree}
           alt=":( image not found"
         />

@@ -4,10 +4,10 @@ import Message from "./Message";
 const ChatBoard: React.FC = () => {
   return (
     <div
-      className="w-full relative flex flex-col items-center bg-cover min-h-[100vh] px-[20%] py-[10vh] gap-10 border border-white rounded-[50px]"
+      className="w-full relative flex flex-col items-center bg-cover min-h-[100vh]  lg:px-[20%] py-[10vh] gap-2 border border-white rounded-[50px]"
       style={{ backgroundImage: "url('/assets/bg/question_board.png')" }}
     >
-      <h1 className="text-6xl text-center font-semibold text-white">
+      <h1 className="text-3xl lg:text-6xl text-center font-semibold text-white">
         Часто задаваемые вопросы:
       </h1>
       <div className="flex flex-col">

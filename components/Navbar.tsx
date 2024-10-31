@@ -11,13 +11,13 @@ const Navbar: React.FC<{
     setOpen(!open);
   };
   return (
-    <div className="w-full h-[110px] fixed flex justify-between items-center xxs:pl-2 pr-5 md:px-[100px] border-b-slate-200 border-2 bg-white z-50">
+    <div className="w-[100vw] h-[110px] fixed flex justify-between items-center xxs:pl-2 pr-5 md:px-[100px] border-b-slate-200 border-2 bg-white z-50">
       <div className="flex gap-2">
         <Image src={IconSrc} width={60} height={50} alt=":( img not found" />
 
         <div className="flex items-center">
           <Image
-            className="xxs:hidden sm:inline-block"
+            className="hidden md:inline-block"
             src={TitleDark}
             width={200}
             height={21}

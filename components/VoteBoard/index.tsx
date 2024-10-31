@@ -12,8 +12,8 @@ const VoteBoard: React.FC = () => {
   return (
     <div className="w-full relative flex flex-col items-center border border-t-4 border-t-neutral-300 gap-14 ">
       <Image src={middleTitle} alt=":( img not found" />
-      <h1 className="text-6xl font-semibold">Почему выбирают нас?</h1>
-      <div className="pb-[80px] flex gap-10 flex-wrap">
+      <h1 className="xxs:text-3xl lg:text-6xl text-center font-semibold">Почему выбирают нас?</h1>
+      <div className="pb-[80px] flex justify-center gap-1 xxl:gap-10 flex-wrap">
         <Button
           titleTop="Быстрота"
           titleBottom="От заявки до получения денег — всего 30 минут."
