@@ -14,6 +14,7 @@ const config: Config = {
       md: "768px",
       lg: "1024px",
       xl: "1440px",
+      desktop: "1980",
       xxl: "2560",
     },
     extend: {

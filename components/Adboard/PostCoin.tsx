@@ -18,7 +18,7 @@ const PostCoin: React.FC = () => {
           src={costOne}
           alt=":( image not found"
         />
-        <div className="absolute w-[25%] left-[20%] sm:w-[14%] sm:left-[18%] md:w-[14%] md:left-[17%] flex flex-col items-center top-[25%]">
+        <div className="absolute xxs:w-[35%] left-[20%] xs:w-[25%] xs:left-[20%] sm:w-[20%] sm:left-[18%] md:w-[14%] md:left-[17%] lg:w- flex flex-col items-center top-[15%] xs:top-[25%]">
           <h1 className="text-5xl font-semibold">Быстрый займ</h1>
           <div className="w-[100%] h-1 bg-lime-600 my-2"></div>
           <h3 className="text-center text-2xl">
@@ -26,7 +26,7 @@ const PostCoin: React.FC = () => {
           </h3>
         </div>
         <Image
-          className="absolute w-[10%] right-[47%] top-[50%] "
+          className="absolute w-[10%] xxs:right-[30%] xs:right-[40%] sm:right-[47%] top-[50%] "
           src={costTwo}
           alt=":( image not found"
         />
@@ -36,12 +36,12 @@ const PostCoin: React.FC = () => {
           alt=":( image not found"
         />
         <Image
-          className="absolute hidden sm:block  w-[90%] right-[10%] md:w-[50%] lg:w-[40%] xl:w-[35%] xl:h-[105%] xxl:w-[24%]  xxl:h-[115%]  xxl:right-[16%] bottom-0 "
+          className="absolute hidden md:block  w-[90%] right-[10%] md:w-[50%] lg:w-[40%] xl:w-[35%] xl:h-[105%] desktop:h-[115%] desktop:w-[30%] xxl:w-[24%]  xxl:h-[115%]  xxl:right-[16%] bottom-0 "
           src={manPhoto}
           alt=":( image not found"
         />
         <Image
-          className="absolute top-[55%] right-[50%] lg:top-[55%] lg:right-[45%] xl:top-[47%] xl:right-[40%] xxl:w-[4%] xxl:right-[33%]  "
+          className="absolute top-[55%] right-[15%] xs:w-[20%] md:w-[10%] md:right-[40%] lg:top-[55%] lg:right-[35%] xl:top-[47%] xl:right-[35%] xl:w-[5%] xxl:w-[4%] xxl:right-[33%]  "
           src={costThree}
           alt=":( image not found"
         />

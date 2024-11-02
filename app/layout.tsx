@@ -7,6 +7,7 @@ import PageProvider from "@/components/PageProvider";
 import FooterBar from "@/components/Footer";
 import SideBar from "@/components/Sidebar";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,6 +22,12 @@ const geistMono = localFont({
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [openSidebar, setOpenSidebar] = useState<boolean>(false);
+
+  const currentPath = usePathname();
+
+  const isLoanPage = () => {
+    return currentPath.indexOf("loan") > -1;
+  };
 
   const handleClickOutside = () => {
     if (openSidebar) {
@@ -48,7 +55,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           <Navbar open={openSidebar} setOpen={setOpenSidebar} />
           <SideBar open={openSidebar} setOpen={setOpenSidebar} />
           <PageProvider>{children}</PageProvider>
-          <FooterBar />
+          {!isLoanPage && <FooterBar />}
         </RootLayoutProvider>
       </body>
     </html>

@@ -27,7 +27,7 @@ const ContactBoard: React.FC = () => {
         <div className="w-full">
           <button
             type="button"
-            className="w-full text-neutral-800 xxs:py-6 lg:py-[56px] xl:py-[58px] xxl:py-[54px] px-5 font-semibold xxs:text-2xl xxl:text-3xl focus:outline-none bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 rounded-2xl lg:rounded-3xl me-2 mb-2 dark:focus:ring-yellow-900"
+            className="w-full text-neutral-800 xxs:py-6 lg:py-[56px] xl:py-[58px] desktop:py-[72px] xxl:py-[54px] px-5 font-semibold xxs:text-2xl xxl:text-3xl focus:outline-none bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 rounded-2xl lg:rounded-3xl me-2 mb-2 dark:focus:ring-yellow-900"
           >
             Пройти экспресс скоринг
           </button>

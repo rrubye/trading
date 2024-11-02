@@ -1,13 +1,16 @@
 const db = require('../models')
 const User = db.user
 
-const SignCtrl = {
+const UserCtrl = {
     signIn: (req, res) => {
 
     },
     signUp: (req, res) => {
 
+    },
+    loanRegister: (req, res) => {
+       
     }
 }
 
-module.exports = SignCtrl
+module.exports = UserCtrl
