@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import IconSrc from "@/public/assets/icons/logo.png";
 import TitleDark from "@/public/assets/icons/title_dark.png";
+import Link from "next/link";
 
 const Navbar: React.FC<{
   open: boolean;
@@ -13,7 +14,9 @@ const Navbar: React.FC<{
   return (
     <div className="w-[100vw] h-[110px] fixed flex justify-between items-center xxs:pl-2 pr-5 md:px-[100px] border-b-slate-200 border-2 bg-white z-50">
       <div className="flex gap-2">
-        <Image src={IconSrc} width={60} height={50} alt=":( img not found" />
+        <Link href={'/'}>
+          <Image src={IconSrc} width={60} height={50} alt=":( img not found" />
+        </Link>
 
         <div className="flex items-center">
           <Image

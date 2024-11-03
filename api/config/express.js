@@ -5,11 +5,9 @@ const bodyParser = require("body-parser");
 module.exports = () => {
   const app = express();
 
-  app.use(cors);
-  app.options("*", cors());
-
-  app.use(bodyParser.urlencoded({ extended: true }));
-  app.use(bodyParser.json());
+  app.use(cors()); // Enables CORS
+  app.use(bodyParser.json()); // Parses incoming JSON requests
+  app.use(bodyParser.urlencoded({ extended: true })); // Parses URL-encoded data
 
   require("../routes/")(app);
 

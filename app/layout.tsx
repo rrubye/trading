@@ -8,6 +8,7 @@ import FooterBar from "@/components/Footer";
 import SideBar from "@/components/Sidebar";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -52,6 +53,25 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <RootLayoutProvider>
+          <Toaster
+            // position="top-right"
+            toastOptions={{
+              success: {
+                duration: 4000,
+                style: {
+                  background: "#4CAF50",
+                  color: "white",
+                },
+              },
+              error: {
+                duration: 4000,
+                style: {
+                  background: '#F44336',
+                  color: 'white',
+                },
+              },
+            }}
+          />
           <Navbar open={openSidebar} setOpen={setOpenSidebar} />
           <SideBar open={openSidebar} setOpen={setOpenSidebar} />
           <PageProvider>{children}</PageProvider>

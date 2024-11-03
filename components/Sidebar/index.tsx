@@ -8,9 +8,9 @@ const SideBar: React.FC<{
 }> = ({ open, setOpen }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const spreadLinks = () =>
-    linkList.map((item: string, key: number) => (
-      <Link className="text-3xl" key={key} href={""}>
-        <li>{item}</li>
+    linkList.map((item: {label: string, path:string}, key: number) => (
+      <Link className="text-3xl" key={key} href={item.path}>
+        <li>{item.label}</li>
       </Link>
     ));
 

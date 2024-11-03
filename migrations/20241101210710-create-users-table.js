@@ -30,19 +30,14 @@ module.exports = {
       email: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true,
-        validate: {
-          isEmail: true,
-        },
       },
       dob: {
-        type: Sequelize.DATEONLY,
+        type: Sequelize.STRING,
         allowNull: false,
       },
       phone_number: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true,
       },
       monthly_income: {
         type: Sequelize.INTEGER,
@@ -51,7 +46,6 @@ module.exports = {
       passport_series_and_number: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true,
       },
       passport_division: {
         type: Sequelize.STRING,
@@ -61,12 +55,12 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      createdAt: {
+      created_at: {
         type: Sequelize.DATE,
         allowNull: false,
         defaultValue: Sequelize.fn("NOW"),
       },
-      updatedAt: {
+      updated_at: {
         type: Sequelize.DATE,
         allowNull: false,
         defaultValue: Sequelize.fn("NOW"),
