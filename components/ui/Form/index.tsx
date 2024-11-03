@@ -94,7 +94,7 @@ const Form: React.FC = () => {
         label="Отчество"
         value={formValues.middleName}
         onChange={handleChange(setFormValues, "middleName")}
-        error={errors.middleName}
+        // error={errors.middleName}
         placeholder="Введите ваше отчество" // Add placeholder
       />
       <Input

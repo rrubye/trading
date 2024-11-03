@@ -58,26 +58,21 @@ const loanCtrl = {
       res
         .status(500)
         .json({ message: "An error occurred while creating the loan" });
-
-      // Add 'async' here
-      // User.create({
-      //   first_name,
-      //   last_name,
-      //   middle_name,
-      //   email,
-      //   dob,
-      //   phone_number,
-      //   monthly_income,
-      //   passport_number,
-      //   passport_division,
-      //   passport_issued_by,
-      // }).then((ok) => {
-      //   if (ok)
-      //     Loan.create({
-      //       loan_amount_expected,
-      //     }).then(res.send("success"));
-      // });
     }
+  },
+  getAllLoans: (req, res) => {
+    Loan.findAll({ include: User })
+      .then((result) => res.send(result))
+      .catch((err) => {
+        console.log(err);
+      });
+  },
+  getAllAllowedLoans: (req, res) => {
+    Loan.findAll({ where: { approval_status: true }, include: User })
+      .then((result) => res.send(result))
+      .catch((err) => {
+        console.log(err);
+      });
   },
 };
 
